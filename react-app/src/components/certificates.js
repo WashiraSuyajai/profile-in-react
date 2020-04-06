@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-class About extends Component {
+class Certificates extends Component {
   render() {
     return <div>This is About Me</div>;
   }
 }
 
-export default About;
+export default Certificates;
