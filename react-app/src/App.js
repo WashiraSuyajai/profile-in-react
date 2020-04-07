@@ -6,24 +6,28 @@ import Footer from "./components/footer";
 import Blogs from "./components/blogs";
 import Profile from "./components/profile";
 import Certificates from "./components/certificates";
+import contact from "./components/contact";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Contact from "./components/contact";
 
 class App extends Component {
   state = {
-    displayMenu: false,
+    isOpen: false,
   };
 
-  toggle = () => this.setState({ displayMenu: !this.setState.displayMenu });
+  toggle = () => this.setState({ isOpen: !this.state.isOpen });
   render() {
-    const menu = `dropdown-menu${this.setState.displayMenu ? "show" : ""}`;
+    const menu = `dropdown-menu${this.state.isOpen ? " show" : ""}`;
     return (
       <div className="App">
-        {/* Navbar */}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="/">
+        {/* Navbar all icons */}
+        {/* 1. web icon */}
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <a className="navbar-brand" href="/">
             Washira
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -31,22 +35,25 @@ class App extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">
-                  Home <span class="sr-only">(current)</span>
+          {/* 2. This is menu */}
+          {/* 2.1 Nornal menu */}
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">
+                  Home <span className="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/blogs">
+              <li className="nav-item">
+                <a className="nav-link" href="/blogs">
                   Blogs
                 </a>
               </li>
-              <li class="nav-item dropdown" onClick={this.toggle}>
+              {/* 2.2 This is drop down menu */}
+              <li className="nav-item dropdown" onClick={this.toggle}>
                 <div>
                   <a
                     className="nav-link dropdown-toggle"
@@ -59,29 +66,31 @@ class App extends Component {
                   >
                     About
                   </a>
-                  
+
                   <div
                     className={menu}
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="/profile">
+                    <a className="dropdown-item" href="/profile">
                       Profile
                     </a>
-                    <a class="dropdown-item" href="/certificates">
+                    <a className="dropdown-item" href="/certificates">
                       Certificates
                     </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="/works">
-                      Something else here
+                    <div className="dropdown-divider"></div>
+                    <a className="dropdown-item" href="/contact">
+                     Contact
                     </a>
                   </div>
                 </div>
               </li>
-              <li class="nav-item">
+
+              {/* 3. This si disable menu */}
+              <li className="nav-item">
                 <a
-                  class="nav-link disabled"
+                  className="nav-link disabled"
                   href="#"
-                  tabindex="-1"
+                  tabIndex="-1"
                   aria-disabled="true"
                 >
                   Disabled
@@ -89,15 +98,16 @@ class App extends Component {
               </li>
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+            {/* 4. This is searcher */}
+            <form className="form-inline my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2"
+                className="form-control mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
               <button
-                class="btn btn-outline-success my-2 my-sm-0"
+                className="btn btn-outline-success my-2 my-sm-0"
                 type="submit"
               >
                 Search
@@ -105,14 +115,16 @@ class App extends Component {
             </form>
           </div>
         </nav>
-
-        {/*Special Thanks:
+        {/* Navbar all icons ended */}
+        {/*Thanks:
         https://stackoverflow.com/questions/50980046/bootstrap-dropdown-not-working-in-react/54188034 */}
 
+        {/* Route */}
         <Route path="/blogs" component={Blogs} />
         <Route path="/about" component={About} />
         <Route path="/profile" component={Profile} />
         <Route path="/certificates" component={Certificates} />
+        <Route path="/contact" component={Contact} />
         <Footer />
       </div>
     );
