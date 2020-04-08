@@ -6,9 +6,9 @@ import Footer from "./components/footer";
 import Blogs from "./components/blogs";
 import Profile from "./components/profile";
 import Certificates from "./components/certificates";
-import contact from "./components/contact";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./components/contact";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 class App extends Component {
   state = {
