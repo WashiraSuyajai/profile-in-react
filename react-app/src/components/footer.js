@@ -8,15 +8,15 @@ class Footer extends Component {
   render() {
     return (
       <div
-        style={{ color: "white", backgroundColor: "#E5E7E9", paddingTop: "20px" }}
+        style={{ color: "black", backgroundColor: "#E5E7E9", paddingTop: "20px" }}
       >
         <div>
-          <div className="display-name" style={{ textAlign: "center" }}>
-            washira
+          <div className="" id="footer-name" style={{ textAlign: "center" }}>
+            <h4>washira</h4>
           </div>
-          <h2 id="FollowUs" style={{ textAlign: "center" }}>
-            Follow us:
-          </h2>
+          <h5 id="Follow" style={{ textAlign: "center" }}>
+            Follow me:
+          </h5>
           {/* Icons */}
           <div className="row" id="footerContent" style={{ alignItems: "center" }}>
 
@@ -26,7 +26,7 @@ class Footer extends Component {
                 <img
                   src={facebookIcon}
                   style={{
-                    width: "48px",
+                    width: "30px",
                     borderRaefdius: "10px",
                     marginLeft: "10px"
                   }}
@@ -39,7 +39,7 @@ class Footer extends Component {
               <img
                 src={lineIcon}
                 style={{
-                  width: "48px",
+                  width: "30px",
                   borderRadius: "10px",
                   marginLeft: "10px"
                 }}
@@ -52,7 +52,7 @@ class Footer extends Component {
                 <img
                   src={instagramIcon}
                   style={{
-                    width: "48px",
+                    width: "30px",
                     borderRadius: "10px",
                     marginLeft: "10px"
                   }}
