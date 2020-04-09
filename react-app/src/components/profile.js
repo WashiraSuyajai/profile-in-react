@@ -9,21 +9,27 @@ class Profile extends Component {
       border: 2px solid blue;
     `;
     return (
-      <div className='container'>
+      <div className="container">
         <div>This is About Me</div>
         <Button>Click</Button>
         <h2>ถ้าถามถึงเพลงโปรดน่ะหรอ</h2>
         <h1>นี่ไง !!!!!!</h1>
         <h5>(แนะนำให้เปิด Volume +++ เพื่ออรรถรส)</h5>
         {/* embed video*/}
-        <div class="embed-responsive embed-responsive-16by9">
+        <div
+          class="embed-responsive embed-responsive-16by9"
+          style={{
+            marginTop: "5vw",
+            marginLeft: "2.5vw",
+            marginRight: "5vw",
+            marginBottom: "5vw",
+          }}
+        >
           <iframe
-            width="560"
-            height="315"
+            class="embed-responsive-item"
             src="https://www.youtube.com/embed/IHS3qJdxefY"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-           
           ></iframe>
         </div>
       </div>
