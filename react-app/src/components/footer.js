@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import lineIcon from "../components/pics/line.png";
 import facebookIcon from "../components/pics/facebook.png";
 import instagramIcon from "../components/pics/instagram.png";
-
+import "./style.css";
 
 class Footer extends Component {
   render() {
     return (
-      <div
-        style={{ color: "black", backgroundColor: "#E5E7E9", paddingTop: "20px" }}
-      >
+      <div id="Footer">
         <div>
           <div className="" id="footer-name" style={{ textAlign: "center" }}>
             <h4>washira</h4>
@@ -18,8 +16,11 @@ class Footer extends Component {
             Follow me:
           </h5>
           {/* Icons */}
-          <div className="row" id="footerContent" style={{ alignItems: "center" }}>
-
+          <div
+            className="row"
+            id="footerContent"
+            style={{ alignItems: "center" }}
+          >
             {/* Facebook */}
             <div>
               <a href="https://www.facebook.com/washira.suyajai">
@@ -28,7 +29,7 @@ class Footer extends Component {
                   style={{
                     width: "30px",
                     borderRaefdius: "10px",
-                    marginLeft: "10px"
+                    marginLeft: "10px",
                   }}
                 />
               </a>
@@ -41,7 +42,7 @@ class Footer extends Component {
                 style={{
                   width: "30px",
                   borderRadius: "10px",
-                  marginLeft: "10px"
+                  marginLeft: "10px",
                 }}
               />
             </div>
@@ -54,13 +55,15 @@ class Footer extends Component {
                   style={{
                     width: "30px",
                     borderRadius: "10px",
-                    marginLeft: "10px"
+                    marginLeft: "10px",
                   }}
                 />
               </a>
             </div>
           </div>
-          <div className="copyright" style={{ textAlign: "center" }}>COPYRIGHT2019@washira</div>
+          <div className="copyright" style={{ textAlign: "center" }}>
+            COPYRIGHT2019@washira
+          </div>
         </div>
       </div>
     );
