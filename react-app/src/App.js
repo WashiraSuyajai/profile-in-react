@@ -13,11 +13,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
   render() {
-    const { href } = this.state;
     return (
       <div className="App">
-        <NavBar />
+        <NavBar/>
         <Footer />
+
+        <Route path="/home" component={Home} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/about" component={About} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/certificates" component={Certificates} />
+        <Route path="/contact" component={Contact} />
       </div>
     );
   }
