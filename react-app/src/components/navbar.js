@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Route } from "react-router-dom";
-
+import { BrowserRouter, Route, withRouter } from "react-router-dom";
+import ReactDOM from "react-dom";
+import {connect} from 'react-redux'
 import Home from "../components/home";
 import About from "../components/about";
-import Footer from "../components/footer";
 import Blogs from "../components/blogs";
 import Profile from "../components/profile";
 import Certificates from "../components/certificates";
@@ -12,49 +12,81 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 class NavBar extends Component {
-  state = {
-    isOpen: null,
-    title: "",
-    href: "",
+  // state = {
+  //   title: "",
+  //   href: "",
+  // };
+
+  // title = ["home", "about", "profile", "certificates"];
+  // href = ["/home", "/about", "/profile", "/certificates"];
+
+  // onSubmit = (event) => {
+  //   event.preventDefault();
+  //   this.setState({ href: "" });
+
+  // };
+
+  // onClick = (event) => {
+  //   this.setState({ href: "/" + event.target.title });
+  // };
+
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidUpdate = (prevProps) => {
+    console.log("***");
+    console.log("nav old pathname", prevProps.location.pathname);
+    console.log("nav new pathname", this.props.location.pathname);
+
+    if (prevProps.location.pathname !== this.props.location.pathname) {
+      // this usually doesn't trigger on navigate
+      console.log("change");
+    }
   };
-  title = ["home", "about", "profile", "certificates"];
-  href = ["/home", "/about", "/profile", "/certificates"];
-  onChange = (i) => {};
-  handleClick = (event) => {
-    event.preventDefault();
-    const { title } = this.state.title;
-    this.setState({ href: "/" + this.title });
-  };
+
   render() {
-    const { href } = this.state;
     return (
       <div>
-        <Navbar bg="light" expand="lg" onToggle=''>
-          <Navbar.Brand title="home" href="/home">
-            POU
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link
-                title=''
-                href='/home'
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link title="about" href="/about">
-                About
-              </Nav.Link>
-              <NavDropdown title="Profile" id="basic-nav-dropdown">
-                <NavDropdown.Item title="profile" href="/profile">
-                  Profile
-                </NavDropdown.Item>
-                <NavDropdown.Item title="certificates" href="/certificates">
-                  Certificates
-                </NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
+        <Navbar
+          bg="light"
+          expand="lg"
+          onToggle=""
+          sticky="top"
+          
+        >
+          <div className="container">
+            <Navbar.Brand
+              title="home"
+              href='/home'
+              
+            >
+              POU
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                <Nav.Link
+                  title="home"
+                  href='/home'
+                  
+                >
+                  Home
+                </Nav.Link>
+                <Nav.Link title="about" href='/about'>
+                  About
+                </Nav.Link>
+                <NavDropdown title="Profile" id="basic-nav-dropdown">
+                  <NavDropdown.Item title="profile" href="/profile">
+                    Profile
+                  </NavDropdown.Item>
+                  <NavDropdown.Item title="certificates" href="/certificates">
+                    Certificates
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
         </Navbar>
         <Route path="/home" component={Home} />
         <Route path="/blogs" component={Blogs} />
@@ -67,7 +99,14 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+export default withRouter(connect(mapStateToProps)(NavBar));
+
+// ReactDOM.render(
+//   <BrowserRouter>
+//     <NavBar />
+//   </BrowserRouter>,
+//   document.getElementById("navbar")
+// );
 
 /* Old navbar
 
@@ -160,6 +199,4 @@ class App extends Component {
     https://stackoverflow.com/questions/50980046/bootstrap-dropdown-not-working-in-react/54188034 
    )
  }
-}
-
-*/
+}*/
