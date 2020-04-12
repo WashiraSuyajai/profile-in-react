@@ -20,8 +20,8 @@ class Demo extends Component {
             <div className="navbar-brand">
               <a className="navbar-item" href="/">
                 <img
-                  src="https://devahoy.com/assets/images/devahoy-text-logo.png"
-                  alt="DEVAHOY LOGO"
+                  src=""
+                  alt=""
                   width="112"
                   height="28"
                 />
@@ -62,7 +62,7 @@ class Demo extends Component {
             </div>
           </div>
         </nav>
-        <Footer/>
+        <Footer />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />

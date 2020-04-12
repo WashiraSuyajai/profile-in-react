@@ -22,23 +22,24 @@ class Certificates extends Component {
         <h1 style={{ textAlign: "center", marginTop: "5vw" }}>
           My Certificates
         </h1>
+        <p style={{marginTop:'2.5vw', textAlign:'center', fontSize:'20px', fontFamily:''}}>นี่คือ Course ต่างๆที่ผมได้เรียนมา สามารถแบ่งออกเป็นกลุ่มของการเรียนรู้ได้เป็น 4 กลุ่ม ดังนี้</p>
 
         <h3 style={{ marginTop: "5vw" }}>The Programming Languages</h3>
         <div className="row">
-          <Image classNane="" src={htmlCert} />
-          <Image classNane="" src={pythonCert} />
+          <Image src={htmlCert} />
+          <Image src={pythonCert} />
         </div>
         <h3 style={{ marginTop: "2.5vw" }}>The Web Application Skill</h3>
         <div className="row">
-          <Image classNane="" src={reactCert} />
+          <Image src={reactCert} />
         </div>
         <h3 style={{ marginTop: "2.5vw" }}>Data Analytic and Bigdata</h3>
         <div className="row">
-          <Image classNane="" src={bigdataCert} />
+          <Image src={bigdataCert} />
         </div>
         <h3 style={{ marginTop: "2.5vw" }}>Other Course I've learned</h3>
         <div className="row">
-          <Image classNane="" src={technicalCert} />
+          <Image src={technicalCert} />
         </div>
       </div>
     );
