@@ -1,86 +1,40 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, withRouter } from "react-router-dom";
-import ReactDOM from "react-dom";
-import {connect} from 'react-redux'
-import Home from "../components/home";
-import About from "../components/about";
-import Blogs from "../components/blogs";
-import Profile from "../components/profile";
-import Certificates from "../components/certificates";
-import Contact from "../components/contact";
-import "bootstrap/dist/css/bootstrap.min.css";
+import { Route, Link, Switch } from "react-router-dom";
+import Home from "./pages/home";
+import Project from "./pages/project";
+import About from "./pages/about";
+import Blogs from "./pages/blogs";
+import Profile from "./pages/profile";
+import Certificates from "./pages/certificates";
+import Contact from "./pages/contact";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-class NavBar extends Component {
-  // state = {
-  //   title: "",
-  //   href: "",
-  // };
-
-  // title = ["home", "about", "profile", "certificates"];
-  // href = ["/home", "/about", "/profile", "/certificates"];
-
-  // onSubmit = (event) => {
-  //   event.preventDefault();
-  //   this.setState({ href: "" });
-
-  // };
-
-  // onClick = (event) => {
-  //   this.setState({ href: "/" + event.target.title });
-  // };
-
-  constructor(props) {
-    super(props);
-  }
-
-  componentDidUpdate = (prevProps) => {
-    console.log("***");
-    console.log("nav old pathname", prevProps.location.pathname);
-    console.log("nav new pathname", this.props.location.pathname);
-
-    if (prevProps.location.pathname !== this.props.location.pathname) {
-      // this usually doesn't trigger on navigate
-      console.log("change");
-    }
-  };
-
+export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar
-          bg="light"
-          expand="lg"
-          onToggle=""
-          sticky="top"
-          
-        >
+        <Navbar bg="light" expand="lg" onToggle="" sticky="top">
           <div className="container">
-            <Navbar.Brand
-              title="home"
-              href='/home'
-              
-            >
+            <Navbar.Brand href="/">
               POU
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link
-                  title="home"
-                  href='/home'
-                  
-                >
+              <Nav.Link as={Link} to="/">
                   Home
                 </Nav.Link>
-                <Nav.Link title="about" href='/about'>
+                <Nav.Link as={Link} to="/project">
+                  Profect
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about">
                   About
                 </Nav.Link>
-                <NavDropdown title="Profile" id="basic-nav-dropdown">
-                  <NavDropdown.Item title="profile" href="/profile">
+                <NavDropdown title='More' id="basic-nav-dropdown">
+                  <NavDropdown.Item as={Link} to="/profile">
                     Profile
                   </NavDropdown.Item>
-                  <NavDropdown.Item title="certificates" href="/certificates">
+                  <NavDropdown.Item as={Link} to="/certificates">
                     Certificates
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -88,18 +42,20 @@ class NavBar extends Component {
             </Navbar.Collapse>
           </div>
         </Navbar>
-        <Route path="/home" component={Home} />
-        <Route path="/blogs" component={Blogs} />
-        <Route path="/about" component={About} />
-        <Route path="/profile" component={Profile} />
-        <Route path="/certificates" component={Certificates} />
-        <Route path="/contact" component={Contact} />
+        <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/blogs" component={Blogs} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/project" component={Project} />
+        <Route exact path="/certificates" component={Certificates} />
+        <Route exact path="/contact" component={Contact} />
+        </Switch>
       </div>
     );
   }
 }
 
-export default withRouter(connect(mapStateToProps)(NavBar));
 
 // ReactDOM.render(
 //   <BrowserRouter>
