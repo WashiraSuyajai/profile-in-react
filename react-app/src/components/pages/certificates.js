@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import htmlCert from "../components/certificate-pics/html-fundamental.JPG";
-import pythonCert from "../components/certificate-pics/python-for-data-science.jpg";
-import bigdataCert from "../components/certificate-pics/data-bigdata.JPG";
-import reactCert from "../components/certificate-pics/react-at-futureskill.jpg";
-import technicalCert from "../components/certificate-pics/technical-support-fundamentals.jpg";
+import htmlCert from "../certificate-pics/html-fundamental.JPG";
+import pythonCert from "../certificate-pics/python-for-data-science.jpg";
+import bigdataCert from "../certificate-pics/data-bigdata.JPG";
+import reactCert from "../certificate-pics/react-at-futureskill.jpg";
+import technicalCert from "../certificate-pics/technical-support-fundamentals.jpg";
 
 class Certificates extends Component {
   render() {
