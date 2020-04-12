@@ -7,7 +7,14 @@ import "./style.css";
 class Footer extends Component {
   render() {
     return (
-      <div id="Footer">
+      <div
+        id="Footer"
+        style={{
+          color: "black",
+          backgroundColor: "#E5E7E9",
+          paddingTop: "20px",
+        }}
+      >
         <div>
           <div className="" id="footer-name" style={{ textAlign: "center" }}>
             <h4>washira</h4>
@@ -19,7 +26,12 @@ class Footer extends Component {
           <div
             className="row"
             id="footerContent"
-            style={{ alignItems: "center" }}
+            style={{
+              alignItems: "normal",
+              marginLeft: "44%",
+              marginTop: "15px",
+              marginBottom: "30px",
+            }}
           >
             {/* Facebook */}
             <div>
