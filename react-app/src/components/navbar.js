@@ -13,19 +13,19 @@ export default class NavBar extends Component {
   render() {
     return (
       <div>
-        <Navbar bg="light" expand="lg" onToggle="" sticky="top">
+        <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
             <Navbar.Brand href="/">
               POU
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav className="ml-auto">
               <Nav.Link as={Link} to="/">
                   Home
                 </Nav.Link>
                 <Nav.Link as={Link} to="/project">
-                  Profect
+                  Project
                 </Nav.Link>
                 <Nav.Link as={Link} to="/about">
                   About
