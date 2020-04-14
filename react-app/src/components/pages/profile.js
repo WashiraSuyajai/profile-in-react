@@ -1,37 +1,68 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Grid, Menu, Segment, Item } from "semantic-ui-react";
+import SearchBar from "./videos/searchbar";
+import { Switch, Route } from "react-router-dom";
+import ProfilePic from "../pics/profile.JPG";
 
 class Profile extends Component {
+  state = { activeItem: "bio" };
+
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
-    const Button = styled.button`
-      background-color: white;
-      color: blue;
-      border: 2px solid blue;
-    `;
+    const { activeItem } = this.state;
+    let content = "";
+    if (activeItem == "History") {
+      content = <h1>This is bio</h1>;
+    } else if (activeItem == "Experiences") {
+      content = "Experiences";
+    } else if (activeItem == "Performances") {
+      content = "This is Performances";
+    } else {
+      content = "This is link";
+    }
+    //ถ้า activeItem เป็นค่าอะไร ให้แสดง content ของค่านั้น
+    // content สามารถเป็น JSX ได้
     return (
-      <div className="container">
-        <div>This is About Me</div>
-        <Button>Click</Button>
-        <h2>ถ้าถามถึงเพลงโปรดน่ะหรอ</h2>
-        <h1>นี่ไง !!!!!!</h1>
-        <h5>(แนะนำให้เปิด Volume +++ เพื่ออรรถรส)</h5>
-        {/* embed video*/}
-        <div
-          class="embed-responsive embed-responsive-16by9"
-          style={{
-            marginTop: "5vw",
-            marginLeft: "2.5vw",
-            marginRight: "5vw",
-            marginBottom: "5vw",
-          }}
-        >
-          <iframe
-            class="embed-responsive-item"
-            src="https://www.youtube.com/embed/IHS3qJdxefY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          ></iframe>
-        </div>
+      <div className="ui container" style={{marginTop:'2vw'}}>
+        <Grid columns={3} divided relaxed stackable>
+          <Grid.Column>
+            <Item>
+              <Item.Image size='massive' src={ProfilePic} />
+            </Item>
+          </Grid.Column>
+          <Grid.Column width={3}>
+            <Menu fluid vertical tabular>
+              <Menu.Item
+                name="History"
+                active={activeItem === "History"}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name="Experiences"
+                active={activeItem === "Experiences"}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name="Performances"
+                active={activeItem === "Performances"}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name="Link"
+                active={activeItem === "Link"}
+                onClick={this.handleItemClick}
+              />
+            </Menu>
+          </Grid.Column>
+
+          <Grid.Column stretched width={7}>
+            <Segment content={content} />
+          </Grid.Column>
+        </Grid>
+        <Switch>
+          <Route exact path="/searchbar" component={SearchBar} />
+        </Switch>
       </div>
     );
   }
