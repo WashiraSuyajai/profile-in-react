@@ -9,28 +9,40 @@ import Certificates from "./pages/certificates";
 import Contact from "./pages/contact";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
+const NavbarOne = {
+  marginLeft: "1vw",
+  marginRight: "1vw",
+  fontFamily: "Chivo",
+  fontSize: "15px",
+};
+
 export default class NavBar extends Component {
   render() {
     return (
       <div>
         <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
-            <Navbar.Brand href="/">
-              POU
-            </Navbar.Brand>
+            <Navbar.Brand href="/">POU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-              <Nav.Link as={Link} to="/">
+                <Nav.Link as={Link} to="/" style={NavbarOne}>
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/project">
+                <Nav.Link as={Link} to="/project" style={NavbarOne}>
                   Project
                 </Nav.Link>
-                <Nav.Link as={Link} to="/about">
+                <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
+                  Blogs
+                </Nav.Link>
+                <Nav.Link as={Link} to="/about" style={NavbarOne}>
                   About
                 </Nav.Link>
-                <NavDropdown title='More' id="basic-nav-dropdown">
+                <NavDropdown
+                  title="More"
+                  id="basic-nav-dropdown"
+                  style={NavbarOne}
+                >
                   <NavDropdown.Item as={Link} to="/profile">
                     Profile
                   </NavDropdown.Item>
@@ -43,19 +55,18 @@ export default class NavBar extends Component {
           </div>
         </Navbar>
         <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/blogs" component={Blogs} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/profile" component={Profile} />
-        <Route exact path="/project" component={Project} />
-        <Route exact path="/certificates" component={Certificates} />
-        <Route exact path="/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/project" component={Project} />
+          <Route exact path="/certificates" component={Certificates} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     );
   }
 }
-
 
 // ReactDOM.render(
 //   <BrowserRouter>
