@@ -4,35 +4,57 @@ import { Grid, Menu, Segment, Item } from "semantic-ui-react";
 import SearchBar from "./videos/searchbar";
 import { Switch, Route } from "react-router-dom";
 import ProfilePic from "../pics/profile.JPG";
+import Bio from "./my-info/bio";
+import History from "./my-info/history";
+import Performances from "./my-info/performances";
+import Experiences from "./my-info/experiences";
+import Link from "./my-info/link";
 
 class Profile extends Component {
-  state = { activeItem: "bio" };
+  state = { activeItem: "Bio" };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
     const { activeItem } = this.state;
     let content = "";
-    if (activeItem == "History") {
-      content = <h1>This is bio</h1>;
+    if (activeItem == "Bio") {
+      content = <Bio />;
+    } else if (activeItem == "History") {
+      content = <History />;
     } else if (activeItem == "Experiences") {
-      content = "Experiences";
+      content = <Experiences />;
     } else if (activeItem == "Performances") {
-      content = "This is Performances";
+      content = <Performances />;
     } else {
-      content = "This is link";
+      content = <Link />;
     }
     //ถ้า activeItem เป็นค่าอะไร ให้แสดง content ของค่านั้น
     // content สามารถเป็น JSX ได้
     return (
-      <div className="ui container" style={{marginTop:'2vw'}}>
-        <Grid columns={3} divided relaxed stackable>
+      <div
+        className="ui container"
+        style={{ marginTop: "5vw", marginBottom: "5vw" }}
+      >
+        <h1 style={{ fontFamily: "chivo" }}>My Info</h1>
+        <Grid
+          columns={3}
+          divided
+          relaxed
+          stackable
+          style={{ marginTop: "2vw" }}
+        >
           <Grid.Column>
             <Item>
-              <Item.Image size='massive' src={ProfilePic} />
+              <Item.Image size="massive" src={ProfilePic} />
             </Item>
           </Grid.Column>
           <Grid.Column width={3}>
             <Menu fluid vertical tabular>
+              <Menu.Item
+                name="Bio"
+                active={activeItem === "Bio"}
+                onClick={this.handleItemClick}
+              />
               <Menu.Item
                 name="History"
                 active={activeItem === "History"}
