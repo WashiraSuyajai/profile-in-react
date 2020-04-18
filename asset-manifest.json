@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/profile-in-react/static/css/main.47b1bab8.chunk.css",
+    "main.js": "/profile-in-react/static/js/main.175fec2e.chunk.js",
+    "main.js.map": "/profile-in-react/static/js/main.175fec2e.chunk.js.map",
+    "runtime-main.js": "/profile-in-react/static/js/runtime-main.1a7f7a87.js",
+    "runtime-main.js.map": "/profile-in-react/static/js/runtime-main.1a7f7a87.js.map",
+    "static/css/2.de424728.chunk.css": "/profile-in-react/static/css/2.de424728.chunk.css",
+    "static/js/2.82cc088f.chunk.js": "/profile-in-react/static/js/2.82cc088f.chunk.js",
+    "static/js/2.82cc088f.chunk.js.map": "/profile-in-react/static/js/2.82cc088f.chunk.js.map",
+    "index.html": "/profile-in-react/index.html",
+    "precache-manifest.5c86add9cd31f80a2de5f64610e39fa9.js": "/profile-in-react/precache-manifest.5c86add9cd31f80a2de5f64610e39fa9.js",
+    "service-worker.js": "/profile-in-react/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/profile-in-react/static/css/2.de424728.chunk.css.map",
+    "static/css/main.47b1bab8.chunk.css.map": "/profile-in-react/static/css/main.47b1bab8.chunk.css.map",
+    "static/js/2.82cc088f.chunk.js.LICENSE.txt": "/profile-in-react/static/js/2.82cc088f.chunk.js.LICENSE.txt",
+    "static/media/data-bigdata.JPG": "/profile-in-react/static/media/data-bigdata.9d33de97.JPG",
+    "static/media/html-fundamental.JPG": "/profile-in-react/static/media/html-fundamental.e5ffb626.JPG",
+    "static/media/instagram.png": "/profile-in-react/static/media/instagram.5c570427.png",
+    "static/media/line.png": "/profile-in-react/static/media/line.b55e3ce6.png",
+    "static/media/pink-sea.jpg": "/profile-in-react/static/media/pink-sea.b9e8e7a1.jpg",
+    "static/media/profile.JPG": "/profile-in-react/static/media/profile.546dccf0.JPG",
+    "static/media/python-for-data-science.jpg": "/profile-in-react/static/media/python-for-data-science.df9a162a.jpg",
+    "static/media/react-at-futureskill.jpg": "/profile-in-react/static/media/react-at-futureskill.127943bc.jpg",
+    "static/media/technical-support-fundamentals.jpg": "/profile-in-react/static/media/technical-support-fundamentals.23a81f93.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a7f7a87.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.82cc088f.chunk.js",
+    "static/css/main.47b1bab8.chunk.css",
+    "static/js/main.175fec2e.chunk.js"
+  ]
+}
