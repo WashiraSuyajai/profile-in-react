@@ -13,7 +13,7 @@ const NavbarOne = {
   marginLeft: "1vw",
   marginRight: "1vw",
   fontFamily: "Chivo",
-  fontSize: "15px",
+  fontSize: "18px",
 };
 
 export default class NavBar extends Component {
@@ -25,7 +25,7 @@ export default class NavBar extends Component {
             <Navbar.Brand href="/">POU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
+              <Nav className="mr-auto">
                 <Nav.Link as={Link} to="/" style={NavbarOne}>
                   Home
                 </Nav.Link>
