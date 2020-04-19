@@ -7,7 +7,6 @@ const Bio = () => (
     <p>Age - 27 years</p>
     <p>From - Lampang, Thailand</p>
     <p>Studied at King Mongkut's University of Technology Thonburi (KMUTT)</p>
-    
     </div>
 )
 export default Bio
