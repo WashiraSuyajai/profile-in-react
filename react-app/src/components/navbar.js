@@ -56,12 +56,12 @@ export default class NavBar extends Component {
         </Navbar>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/blogs" component={Blogs} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/project" component={Project} />
-          <Route exact path="/certificates" component={Certificates} />
-          <Route exact path="/contact" component={Contact} />
+          <Route path="/blogs" component={Blogs} />
+          <Route path="/about" component={About} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/project" component={Project} />
+          <Route path="/certificates" component={Certificates} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </HashRouter>
     );
