@@ -19,7 +19,7 @@ const NavbarOne = {
 export default class NavBar extends Component {
   render() {
     return (
-      <HashRouter basename="/">
+      <div>
         <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
             <Navbar.Brand href="/">POU</Navbar.Brand>
@@ -63,7 +63,7 @@ export default class NavBar extends Component {
           <Route exact path="/certificates" component={Certificates} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
-      </HashRouter>
+      </div>
     );
   }
 }
