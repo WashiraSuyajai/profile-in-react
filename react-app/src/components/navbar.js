@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Link, Switch, HashRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/project";
 import About from "./pages/about";
@@ -19,7 +19,7 @@ const NavbarOne = {
 export default class NavBar extends Component {
   render() {
     return (
-      <div>
+      <HashRouter basename='/'>
         <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
             <Navbar.Brand href="/">POU</Navbar.Brand>
@@ -63,7 +63,7 @@ export default class NavBar extends Component {
           <Route exact path="/certificates" component={Certificates} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
-      </div>
+      </HashRouter>
     );
   }
 }
