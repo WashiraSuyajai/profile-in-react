@@ -26,16 +26,36 @@ export default class NavBar extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link as={Link} to="/" style={NavbarOne}>
+                <Nav.Link
+                  as={Link}
+                  to="/"
+                  style={NavbarOne}
+                  activeClassname="active"
+                >
                   Home
                 </Nav.Link>
-                <Nav.Link as={Link} to="/project" style={NavbarOne}>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  style={NavbarOne}
+                  activeClassname="chosen"
+                >
                   Project
                 </Nav.Link>
-                <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
+                <Nav.Link
+                  as={Link}
+                  to="/blogs"
+                  style={NavbarOne}
+                  activeClassname="chosen"
+                >
                   Blogs
                 </Nav.Link>
-                <Nav.Link as={Link} to="/about" style={NavbarOne}>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  style={NavbarOne}
+                  activeClassname="chosen"
+                >
                   About
                 </Nav.Link>
                 <NavDropdown
@@ -43,10 +63,18 @@ export default class NavBar extends Component {
                   id="basic-nav-dropdown"
                   style={NavbarOne}
                 >
-                  <NavDropdown.Item as={Link} to="/profile">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/profile"
+                    activeClassname="active"
+                  >
                     Profile
                   </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/certificates">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/certificates"
+                    activeClassname="active"
+                  >
                     Certificates
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -55,17 +83,49 @@ export default class NavBar extends Component {
           </div>
         </Navbar>
         <Switch>
-          <Route exact path={"/"} component={Home} />
-          <Route exact path={"/blogs"} component={Blogs} />
-          <Route exact path={"/about"} component={About} />
-          <Route exact path={"/profile"} component={Profile} />
-          <Route exact path={"/project"} component={Project} />
-          <Route exact path={"/certificates"} component={Certificates} />
-          <Route exact path={"/contact"} component={Contact} />
+          <Route exact path={"/"} exact render={() => <Home />} />
+          <Route exact path={"/blogs"} exact render={props => <Blogs />} />
+          <Route exact path={"/about"} exact render={props => <About />} />
+          <Route
+            exact
+            path={"/profile"}
+            exact
+            render={props => <Profile />}
+          />
+          <Route
+            exact
+            path={"/project"}
+            exact
+            render={props => <Project />}
+          />
+          <Route
+            exact
+            path={"/certificates"}
+            exact
+            render={props => <Certificates />}
+          />
+          <Route
+            exact
+            path={"/contact"}
+            exact
+            render={props => <Contact />}
+          />
         </Switch>
       </div>
     );
   }
+}
+
+{
+  /* <Switch>
+  <Route exact path={"/"} component={Home} />
+  <Route exact path={"/blogs"} component={Blogs} />
+  <Route exact path={"/about"} component={About} />
+  <Route exact path={"/profile"} component={Profile} />
+  <Route exact path={"/project"} component={Project} />
+  <Route exact path={"/certificates"} component={Certificates} />
+  <Route exact path={"/contact"} component={Contact} />
+</Switch>; */
 }
 
 // ReactDOM.render(
