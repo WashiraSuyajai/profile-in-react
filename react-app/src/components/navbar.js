@@ -54,7 +54,7 @@ export default class NavBar extends Component {
             </Navbar.Collapse>
           </div>
         </Navbar>
-        <div>
+        <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/blogs" component={Blogs} />
           <Route path="/about" component={About} />
@@ -62,7 +62,7 @@ export default class NavBar extends Component {
           <Route path="/project" component={Project} />
           <Route path="/certificates" component={Certificates} />
           <Route path="/contact" component={Contact} />
-        </div>
+        </Switch>
       </HashRouter>
     );
   }
