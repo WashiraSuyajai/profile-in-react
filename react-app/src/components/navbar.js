@@ -19,13 +19,13 @@ const NavbarOne = {
 export default class NavBar extends Component {
   render() {
     return (
-      <HashRouter basename='/'>
+      <HashRouter basename="/">
         <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
             <Navbar.Brand href="/">POU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
+              <Nav className="ml-auto">
                 <Nav.Link as={Link} to="/" style={NavbarOne}>
                   Home
                 </Nav.Link>
