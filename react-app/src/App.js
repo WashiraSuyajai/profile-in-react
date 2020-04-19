@@ -7,12 +7,10 @@ import { HashRouter } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <HashRouter basename="/">
-        <div className="App">
-          <NavBar />
-          <Footer />
-        </div>
-      </HashRouter>
+      <div className="App">
+        <NavBar />
+        <Footer />
+      </div>
     );
   }
 }
