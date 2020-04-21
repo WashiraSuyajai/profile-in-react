@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, Switch, HashRouter } from "react-router-dom";
+import { Route, Link, Switch, HashRouter, Redirect } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/project";
 import About from "./pages/about";
@@ -26,36 +26,16 @@ export default class NavBar extends Component {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link
-                  as={Link}
-                  to="/"
-                  style={NavbarOne}
-                  activeClassname="active"
-                >
+                <Nav.Link as={Link} to="/" style={NavbarOne}>
                   Home
                 </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  to="/project"
-                  style={NavbarOne}
-                  activeClassname="chosen"
-                >
+                <Nav.Link as={Link} to="/project" style={NavbarOne}>
                   Project
                 </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  to="/blogs"
-                  style={NavbarOne}
-                  activeClassname="chosen"
-                >
+                <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
                   Blogs
                 </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  to="/about"
-                  style={NavbarOne}
-                  activeClassname="chosen"
-                >
+                <Nav.Link as={Link} to="/about" style={NavbarOne}>
                   About
                 </Nav.Link>
                 <NavDropdown
@@ -63,18 +43,10 @@ export default class NavBar extends Component {
                   id="basic-nav-dropdown"
                   style={NavbarOne}
                 >
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/profile"
-                    activeClassname="active"
-                  >
+                  <NavDropdown.Item as={Link} to="/profile">
                     Profile
                   </NavDropdown.Item>
-                  <NavDropdown.Item
-                    as={Link}
-                    to="/certificates"
-                    activeClassname="active"
-                  >
+                  <NavDropdown.Item as={Link} to="/certificates">
                     Certificates
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -83,49 +55,18 @@ export default class NavBar extends Component {
           </div>
         </Navbar>
         <Switch>
-          <Route exact path={"/"} exact render={() => <Home />} />
-          <Route exact path={"/blogs"} exact render={props => <Blogs />} />
-          <Route exact path={"/about"} exact render={props => <About />} />
-          <Route
-            exact
-            path={"/profile"}
-            exact
-            render={props => <Profile />}
-          />
-          <Route
-            exact
-            path={"/project"}
-            exact
-            render={props => <Project />}
-          />
-          <Route
-            exact
-            path={"/certificates"}
-            exact
-            render={props => <Certificates />}
-          />
-          <Route
-            exact
-            path={"/contact"}
-            exact
-            render={props => <Contact />}
-          />
+          <Route exact path="/" render={() => <Redirect to="/home" />} />
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/profile" component={Profile} />
+          <Route exact path="/project" component={Project} />
+          <Route exact path="/certificates" component={Certificates} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
       </div>
     );
   }
-}
-
-{
-  /* <Switch>
-  <Route exact path={"/"} component={Home} />
-  <Route exact path={"/blogs"} component={Blogs} />
-  <Route exact path={"/about"} component={About} />
-  <Route exact path={"/profile"} component={Profile} />
-  <Route exact path={"/project"} component={Project} />
-  <Route exact path={"/certificates"} component={Certificates} />
-  <Route exact path={"/contact"} component={Contact} />
-</Switch>; */
 }
 
 // ReactDOM.render(
