@@ -3,8 +3,6 @@ import lineIcon from "../components/pics/line.png";
 import facebookIcon from "../components/pics/facebook.png";
 import instagramIcon from "../components/pics/instagram.png";
 
-
-
 const image = {
   width: "30px",
   borderRadius: "10px",
@@ -15,7 +13,7 @@ class Footer extends Component {
   render() {
     return (
       <div
-        id="footer"
+        className="container-fluid"
         style={{
           color: "black",
           backgroundColor: "#FDD3FB",
@@ -26,16 +24,19 @@ class Footer extends Component {
           <div className="" style={{ textAlign: "center" }}>
             <h4>washira</h4>
           </div>
-          <h5 id="Follow" style={{ textAlign: "center" }}>
-            Follow me:
+          <h5 id="Follow" style={{ marginLeft: "60vw" }}>
+            Follow me
           </h5>
           {/* Icons */}
-          <div className="row" style={{
+          <div
+            className="row"
+            style={{
               alignItems: "normal",
-              marginLeft: "70%",
+              marginLeft: "58vw",
               marginTop: "15px",
               marginBottom: "30px",
-            }}>
+            }}
+          >
             {/* Facebook */}
             <div>
               <a href="https://www.facebook.com/washira.suyajai">
@@ -45,7 +46,7 @@ class Footer extends Component {
 
             {/* Line */}
             <div>
-              <a href=''>
+              <a href="">
                 <img src={lineIcon} style={image} />
               </a>
             </div>
@@ -57,7 +58,9 @@ class Footer extends Component {
               </a>
             </div>
           </div>
-          <div style={{ textAlign: "center" ,marginBottom:'20px' }}>2020@washira</div>
+          <div style={{ marginLeft: "60vw", marginBottom: "20px" }}>
+            2020@washira
+          </div>
         </div>
       </div>
     );
