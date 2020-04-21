@@ -17,7 +17,7 @@ class Footer extends Component {
         style={{
           color: "black",
           backgroundColor: "#FDD3FB",
-          paddingTop: "20px",
+          paddingTop: "10px",
         }}
       >
         <div>
