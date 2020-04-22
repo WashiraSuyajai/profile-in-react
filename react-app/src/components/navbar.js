@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, Switch, HashRouter, Redirect } from "react-router-dom";
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/project";
 import About from "./pages/about";
@@ -22,7 +22,7 @@ export default class NavBar extends Component {
       <div>
         <Navbar bg="light" expand="lg" sticky="top">
           <div className="container">
-            <Navbar.Brand href="/">POU</Navbar.Brand>
+            <Navbar.Brand href="/profile-in-react/">POU</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
@@ -56,6 +56,11 @@ export default class NavBar extends Component {
         </Navbar>
         <Switch>
           <Route exact path="/" render={() => <Redirect to="/home" />} />
+          <Route
+            exact
+            path="/profile-in-react"
+            render={() => <Redirect to="/home" />}
+          />
           <Route exact path="/home" component={Home} />
           <Route exact path="/blogs" component={Blogs} />
           <Route exact path="/about" component={About} />
