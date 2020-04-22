@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/profile-in-react/static/css/main.47b1bab8.chunk.css",
-    "main.js": "/profile-in-react/static/js/main.81706d1b.chunk.js",
-    "main.js.map": "/profile-in-react/static/js/main.81706d1b.chunk.js.map",
+    "main.js": "/profile-in-react/static/js/main.6b2212bf.chunk.js",
+    "main.js.map": "/profile-in-react/static/js/main.6b2212bf.chunk.js.map",
     "runtime-main.js": "/profile-in-react/static/js/runtime-main.1a7f7a87.js",
     "runtime-main.js.map": "/profile-in-react/static/js/runtime-main.1a7f7a87.js.map",
     "static/css/2.de424728.chunk.css": "/profile-in-react/static/css/2.de424728.chunk.css",
-    "static/js/2.5bc3ab39.chunk.js": "/profile-in-react/static/js/2.5bc3ab39.chunk.js",
-    "static/js/2.5bc3ab39.chunk.js.map": "/profile-in-react/static/js/2.5bc3ab39.chunk.js.map",
+    "static/js/2.14c990d6.chunk.js": "/profile-in-react/static/js/2.14c990d6.chunk.js",
+    "static/js/2.14c990d6.chunk.js.map": "/profile-in-react/static/js/2.14c990d6.chunk.js.map",
     "index.html": "/profile-in-react/index.html",
-    "precache-manifest.36e945b438c89de25d7c7a1f843171ad.js": "/profile-in-react/precache-manifest.36e945b438c89de25d7c7a1f843171ad.js",
+    "precache-manifest.b30f96656985f0abeef88970ba4a0eef.js": "/profile-in-react/precache-manifest.b30f96656985f0abeef88970ba4a0eef.js",
     "service-worker.js": "/profile-in-react/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/profile-in-react/static/css/2.de424728.chunk.css.map",
     "static/css/main.47b1bab8.chunk.css.map": "/profile-in-react/static/css/main.47b1bab8.chunk.css.map",
-    "static/js/2.5bc3ab39.chunk.js.LICENSE.txt": "/profile-in-react/static/js/2.5bc3ab39.chunk.js.LICENSE.txt",
+    "static/js/2.14c990d6.chunk.js.LICENSE.txt": "/profile-in-react/static/js/2.14c990d6.chunk.js.LICENSE.txt",
+    "static/media/JavaScript.JPG": "/profile-in-react/static/media/JavaScript.37d23671.JPG",
     "static/media/data-bigdata.JPG": "/profile-in-react/static/media/data-bigdata.9d33de97.JPG",
     "static/media/html-fundamental.JPG": "/profile-in-react/static/media/html-fundamental.e5ffb626.JPG",
     "static/media/instagram.png": "/profile-in-react/static/media/instagram.5c570427.png",
+    "static/media/intro-deep-learning.jpg": "/profile-in-react/static/media/intro-deep-learning.a9adc3d1.jpg",
     "static/media/line.png": "/profile-in-react/static/media/line.b55e3ce6.png",
     "static/media/pink-sea.jpg": "/profile-in-react/static/media/pink-sea.b9e8e7a1.jpg",
     "static/media/profile.JPG": "/profile-in-react/static/media/profile.546dccf0.JPG",
@@ -27,8 +29,8 @@
   "entrypoints": [
     "static/js/runtime-main.1a7f7a87.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.5bc3ab39.chunk.js",
+    "static/js/2.14c990d6.chunk.js",
     "static/css/main.47b1bab8.chunk.css",
-    "static/js/main.81706d1b.chunk.js"
+    "static/js/main.6b2212bf.chunk.js"
   ]
 }

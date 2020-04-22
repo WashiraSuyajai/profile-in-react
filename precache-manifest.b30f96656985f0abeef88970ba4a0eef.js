@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c224b3d814b571366d7e30f3724c436",
+    "revision": "94cd3bfc969e2624d38b809f90433434",
     "url": "/profile-in-react/index.html"
   },
   {
-    "revision": "8360eb2b39774a2437fb",
+    "revision": "3bd12a367f66977cc012",
     "url": "/profile-in-react/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "6fef93b17eaab1ba24ff",
+    "revision": "6e60d11a60489b58060d",
     "url": "/profile-in-react/static/css/main.47b1bab8.chunk.css"
   },
   {
-    "revision": "8360eb2b39774a2437fb",
-    "url": "/profile-in-react/static/js/2.5bc3ab39.chunk.js"
+    "revision": "3bd12a367f66977cc012",
+    "url": "/profile-in-react/static/js/2.14c990d6.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/profile-in-react/static/js/2.5bc3ab39.chunk.js.LICENSE.txt"
+    "url": "/profile-in-react/static/js/2.14c990d6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6fef93b17eaab1ba24ff",
-    "url": "/profile-in-react/static/js/main.81706d1b.chunk.js"
+    "revision": "6e60d11a60489b58060d",
+    "url": "/profile-in-react/static/js/main.6b2212bf.chunk.js"
   },
   {
     "revision": "defd36548f9aff123d8b",
     "url": "/profile-in-react/static/js/runtime-main.1a7f7a87.js"
+  },
+  {
+    "revision": "37d236717493b6cc6a2dff01bdc2c3b6",
+    "url": "/profile-in-react/static/media/JavaScript.37d23671.JPG"
   },
   {
     "revision": "9d33de97a095dbcae4bf299396cfeff0",
@@ -38,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5c570427ee23f69853d28aec805eee79",
     "url": "/profile-in-react/static/media/instagram.5c570427.png"
+  },
+  {
+    "revision": "a9adc3d1b17d9b02a91fe73b1838a5f1",
+    "url": "/profile-in-react/static/media/intro-deep-learning.a9adc3d1.jpg"
   },
   {
     "revision": "b55e3ce6949517e6fe9fa94f00a12586",
