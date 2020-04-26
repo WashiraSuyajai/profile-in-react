@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/project";
@@ -16,72 +16,73 @@ const NavbarOne = {
   fontSize: "18px",
 };
 
-export default class NavBar extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar bg="light" expand="lg" sticky="top">
-          <div className="container">
-            <Navbar.Brand href="/profile-in-react/">POU</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="ml-auto">
-                <Nav.Link as={Link} to="/" style={NavbarOne}>
-                  Home
-                </Nav.Link>
-                <Nav.Link as={Link} to="/project" style={NavbarOne}>
-                  Project
-                </Nav.Link>
-                <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
-                  Blogs
-                </Nav.Link>
-                <Nav.Link as={Link} to="/about" style={NavbarOne}>
-                  About
-                </Nav.Link>
-                <NavDropdown
-                  title="More"
-                  id="basic-nav-dropdown"
-                  style={NavbarOne}
-                >
-                  <NavDropdown.Item as={Link} to="/profile">
-                    Profile
-                  </NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/certificates">
-                    Certificates
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </div>
-        </Navbar>
-        <Switch>
-          <Route exact path="/" render={() => <Redirect to="/home" />} />
-          <Route
-            exact
-            path="/profile-in-react"
-            render={() => <Redirect to="/home" />}
-          />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/blogs" component={Blogs} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/project" component={Project} />
-          <Route exact path="/certificates" component={Certificates} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-      </div>
-    );
-  }
+function NavBar({ navbarTheme, onThemeChange }) {
+  return (
+    <div>
+      <Navbar
+        bg={navbarTheme === "light" ? "light" : "secondary"}
+        expand="lg"
+        sticky="top"
+        style={{ transition: "all 0.25s linear" }}
+      >
+        <div className="container">
+          <Navbar.Brand href="/profile-in-react/">POU</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link as={Link} to="/" style={NavbarOne}>
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/project" style={NavbarOne}>
+                Project
+              </Nav.Link>
+              <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
+                Blogs
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about" style={NavbarOne}>
+                About
+              </Nav.Link>
+              <NavDropdown
+                title="More"
+                id="basic-nav-dropdown"
+                style={NavbarOne}
+              >
+                <NavDropdown.Item as={Link} to="/profile">
+                  Profile
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/certificates">
+                  Certificates
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+          <button onClick={onThemeChange}>Toggle theme</button>
+        </div>
+      </Navbar>
+      {/* Router Switch */}
+      <Switch>
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route
+          exact
+          path="/profile-in-react"
+          render={() => <Redirect to="/home" />}
+        />
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/blogs" component={Blogs} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/project" component={Project} />
+        <Route exact path="/certificates" component={Certificates} />
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
+    </div>
+  );
 }
+export default NavBar;
 
-// ReactDOM.render(
-//   <BrowserRouter>
-//     <NavBar />
-//   </BrowserRouter>,
-//   document.getElementById("navbar")
-// );
 
-/* Old navbar
+
+/* Old navbar version
 
 class App extends Component {
  state = {
