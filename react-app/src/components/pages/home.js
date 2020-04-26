@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Image } from "react-bootstrap";
-import PinkSea from "./pink-sea.jpg";
+import PinkSea from "./cover-pics/pink-sea.jpg";
 
 const P = styled.p`
   margin-top: 2vw;
   font-size: 20px;
-  font-fammily: "Trebuchet MS", Helvetica, sans-serif;
+  font-fammily: chivo;
 `;
 const PBottom = styled(P)`
   margin-bottom: 5vw;
@@ -23,7 +23,7 @@ class Home extends Component {
           <h1
             style={{
               marginTop: "5vw",
-              fontFamily: '"Trebuchet MS", Helvetica, sans-serif',
+              fontFamily: "chivo",
             }}
           >
             Welcome to my page
@@ -32,16 +32,18 @@ class Home extends Component {
             ยินดีต้อนรับทุกท่านเข้าสู่ Web Page ของผมนะครับ ในเวปไซต์นี้
             ผมได้จัดทำขึ้นจากการทดลองฝึกเขียน Web Site ด้วย React
             และมีการตกแต่งหน้าตาด้วย CSS Framework อย่าง React Bootstrap และ
-            React-Semantic-UI ซึ่งอาจจะสวย (รึเปล่าหว่า?)
+            React-Semantic-UI เพิ่อเพิ่มความสวย (รึเปล่าหว่า?)
           </P>
           <P>
-            นอกเหนือจากการโชว์ประวัติส่วนตัวและความเป็นตัวเองผ่านเวปไซต์นี้แล้ว
-            ผมยังมีแผนที่จะทำเวปนี้ให้เป็นที่เผยแพร่บทความต่างๆที่ผมจะเขียนในอนาคต
-            (ซึ่งเป็นเหตุผลว่า ทำไมถึงมีเมนู Blogs ที่เมนูบาร์){" "}
+            ซึ่งการพัฒนาเวปไซต์ของผมนั้นเป็นการได้ทดลองทำสิ่งใหม่ๆออกมา
+            เปรียบเหมือนเป็นการเดินทางในเส้นทางใหม่ๆ เปิดโลกทางเทคโนโลยีของผมมากๆ
+            เปลี่ยนมนุษย์คนนึง ที่เคยไม่รู้จักการทำงานของเวปไซต์หนึ่งๆ
+            ให้เข้าใจผ่านการลงมือทดลองทำ จนเป็นแบบที่ท่านได้เห็นนี้
+            และผมจะพัฒนาให้ดีขึ้นต่อไป ตามความรู้และเทคโนโลยีที่ก้าวไปข้างหน้าอย่างไม่หยุดยั้ง
           </P>
           <PBottom>
-            ดังนั้น ในอนาคตไม่ใกล้ไม่ไกลนี้
-            ทุกคนจะได้พบกับมัน(บทความ)อย่างแน่นอนครับ ดีใจที่ได้พบกับทุกท่านครับ
+            ท้ายสุดนี้
+            ผมกราบขอบพระคุณทุกท่านที่ได้เข้ามารับชมภายในเวปไซต์นี้ด้วยความยินดียิ่งครับ
           </PBottom>
         </div>
       </div>
