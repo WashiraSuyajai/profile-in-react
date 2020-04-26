@@ -7,7 +7,7 @@ class Project extends Component {
     return (
       <div>
         <div>
-          <Image src={Basket} style={{ width: "100vw", height: "400px" }} />
+          <Image src={Basket} style={{ width: "100vw", height: "100vh" }} />
         </div>
         <div className="container">
           <h1>Project</h1>

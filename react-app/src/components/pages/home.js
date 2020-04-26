@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <div style={{ marginBottom: "5vw" }}>
         <div>
-          <Image src={PinkSea} style={{ width: "100vw", height: "400px" }} />
+          <Image src={PinkSea} style={{ width: "100vw", height: "100vh" }} />
         </div>
         <div className="container">
           <h1

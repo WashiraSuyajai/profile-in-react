@@ -4,7 +4,7 @@ import SearchBar from "./videos/searchbar";
 import { Switch, Route } from "react-router-dom";
 import ProfilePic from "../pics/profile.JPG";
 import Bio from "./my-info/bio";
-import History from "./my-info/history";
+import Interesting from "./my-info/interesting"
 import Performances from "./my-info/performances";
 import Experiences from "./my-info/experiences";
 import Link from "./my-info/link";
@@ -20,8 +20,8 @@ class Profile extends Component {
     let content = "";
     if (activeItem == "Bio") {
       content = <Bio />;
-    } else if (activeItem == "History") {
-      content = <History />;
+    } else if (activeItem == "Interesting") {
+      content = <Interesting />;
     } else if (activeItem == "Experiences") {
       content = <Experiences />;
     } else if (activeItem == "Performances") {
@@ -34,7 +34,7 @@ class Profile extends Component {
     return (
       <div>
         <div>
-          <Image src={Sake} style={{ width: "100vw", height: "400px" }} />
+          <Image src={Sake} style={{ width: "100vw", height: "100vh" }} />
         </div>
         <div
           className="ui container"
@@ -61,8 +61,8 @@ class Profile extends Component {
                   onClick={this.handleItemClick}
                 />
                 <Menu.Item
-                  name="History"
-                  active={activeItem === "History"}
+                  name="Interesting"
+                  active={activeItem === "Interesting"}
                   onClick={this.handleItemClick}
                 />
                 <Menu.Item

@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/project";
-import About from "./pages/about";
 import Blogs from "./pages/blogs";
 import Profile from "./pages/profile";
 import Certificates from "./pages/certificates";
@@ -39,9 +38,6 @@ function NavBar({ navbarTheme, onThemeChange }) {
               <Nav.Link as={Link} to="/blogs" style={NavbarOne}>
                 Blogs
               </Nav.Link>
-              <Nav.Link as={Link} to="/about" style={NavbarOne}>
-                About
-              </Nav.Link>
               <NavDropdown
                 title="More"
                 id="basic-nav-dropdown"
@@ -56,7 +52,7 @@ function NavBar({ navbarTheme, onThemeChange }) {
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
-          <button onClick={onThemeChange}>Toggle theme</button>
+          <button onClick={onThemeChange}>Dark Mode</button>
         </div>
       </Navbar>
       {/* Router Switch */}
@@ -69,7 +65,6 @@ function NavBar({ navbarTheme, onThemeChange }) {
         />
         <Route exact path="/home" component={Home} />
         <Route exact path="/blogs" component={Blogs} />
-        <Route exact path="/about" component={About} />
         <Route exact path="/profile" component={Profile} />
         <Route exact path="/project" component={Project} />
         <Route exact path="/certificates" component={Certificates} />
@@ -79,8 +74,6 @@ function NavBar({ navbarTheme, onThemeChange }) {
   );
 }
 export default NavBar;
-
-
 
 /* Old navbar version
 
