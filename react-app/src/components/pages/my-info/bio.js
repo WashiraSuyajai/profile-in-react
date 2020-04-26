@@ -1,7 +1,7 @@
 import React from "react";
 
 const Bio = () => (
-    <div>
+    <div style={{color:'black'}}>
     <p>Name - Washira Suyajai</p>
     <p>Nick name - Pou</p>
     <p>Age - 27 years</p>

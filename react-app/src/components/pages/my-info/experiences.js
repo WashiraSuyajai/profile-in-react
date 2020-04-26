@@ -1,7 +1,7 @@
 import React from "react";
 
 const Experiences = () => (
-    <div>
+    <div style={{color:'black'}}>
     <p>My Experiences</p>
     
     

@@ -1,7 +1,7 @@
 import React from "react";
 
 const History = () => (
-    <div>
+    <div style={{color:'black'}}>
     <p>My History</p>
     
     
