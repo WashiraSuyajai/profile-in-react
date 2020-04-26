@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94cd3bfc969e2624d38b809f90433434",
+    "revision": "776f7dcbbf1e87e7c97628bde787a9ac",
     "url": "/profile-in-react/index.html"
   },
   {
-    "revision": "3bd12a367f66977cc012",
+    "revision": "44079579d972d396cf6f",
     "url": "/profile-in-react/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "6e60d11a60489b58060d",
+    "revision": "d4ccf7317e878c8d4c3b",
     "url": "/profile-in-react/static/css/main.47b1bab8.chunk.css"
   },
   {
-    "revision": "3bd12a367f66977cc012",
-    "url": "/profile-in-react/static/js/2.14c990d6.chunk.js"
+    "revision": "44079579d972d396cf6f",
+    "url": "/profile-in-react/static/js/2.0d5043aa.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/profile-in-react/static/js/2.14c990d6.chunk.js.LICENSE.txt"
+    "url": "/profile-in-react/static/js/2.0d5043aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e60d11a60489b58060d",
-    "url": "/profile-in-react/static/js/main.6b2212bf.chunk.js"
+    "revision": "d4ccf7317e878c8d4c3b",
+    "url": "/profile-in-react/static/js/main.d9453821.chunk.js"
   },
   {
     "revision": "defd36548f9aff123d8b",
@@ -32,8 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/media/JavaScript.37d23671.JPG"
   },
   {
+    "revision": "ee803240c4b4a2e88478e92283cb19b2",
+    "url": "/profile-in-react/static/media/basket.ee803240.jpg"
+  },
+  {
     "revision": "9d33de97a095dbcae4bf299396cfeff0",
     "url": "/profile-in-react/static/media/data-bigdata.9d33de97.JPG"
+  },
+  {
+    "revision": "5f566222b134274270dc3e8105e0dc47",
+    "url": "/profile-in-react/static/media/harumi-wharf.5f566222.jpg"
   },
   {
     "revision": "e5ffb626fa7bd477a0081f17ba2af25b",
@@ -66,6 +74,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "127943bc7a1da1345ef1a24ee68edbf5",
     "url": "/profile-in-react/static/media/react-at-futureskill.127943bc.jpg"
+  },
+  {
+    "revision": "d872d69046345098848c60bc70ef86f7",
+    "url": "/profile-in-react/static/media/sake.d872d690.jpg"
   },
   {
     "revision": "23a81f9308841ccbe0a8b7ef87c5566d",

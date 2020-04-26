@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/profile-in-react/static/css/main.47b1bab8.chunk.css",
-    "main.js": "/profile-in-react/static/js/main.6b2212bf.chunk.js",
-    "main.js.map": "/profile-in-react/static/js/main.6b2212bf.chunk.js.map",
+    "main.js": "/profile-in-react/static/js/main.d9453821.chunk.js",
+    "main.js.map": "/profile-in-react/static/js/main.d9453821.chunk.js.map",
     "runtime-main.js": "/profile-in-react/static/js/runtime-main.1a7f7a87.js",
     "runtime-main.js.map": "/profile-in-react/static/js/runtime-main.1a7f7a87.js.map",
     "static/css/2.de424728.chunk.css": "/profile-in-react/static/css/2.de424728.chunk.css",
-    "static/js/2.14c990d6.chunk.js": "/profile-in-react/static/js/2.14c990d6.chunk.js",
-    "static/js/2.14c990d6.chunk.js.map": "/profile-in-react/static/js/2.14c990d6.chunk.js.map",
+    "static/js/2.0d5043aa.chunk.js": "/profile-in-react/static/js/2.0d5043aa.chunk.js",
+    "static/js/2.0d5043aa.chunk.js.map": "/profile-in-react/static/js/2.0d5043aa.chunk.js.map",
     "index.html": "/profile-in-react/index.html",
-    "precache-manifest.b30f96656985f0abeef88970ba4a0eef.js": "/profile-in-react/precache-manifest.b30f96656985f0abeef88970ba4a0eef.js",
+    "precache-manifest.074baedb76a096578c18625425b0d25b.js": "/profile-in-react/precache-manifest.074baedb76a096578c18625425b0d25b.js",
     "service-worker.js": "/profile-in-react/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/profile-in-react/static/css/2.de424728.chunk.css.map",
     "static/css/main.47b1bab8.chunk.css.map": "/profile-in-react/static/css/main.47b1bab8.chunk.css.map",
-    "static/js/2.14c990d6.chunk.js.LICENSE.txt": "/profile-in-react/static/js/2.14c990d6.chunk.js.LICENSE.txt",
+    "static/js/2.0d5043aa.chunk.js.LICENSE.txt": "/profile-in-react/static/js/2.0d5043aa.chunk.js.LICENSE.txt",
     "static/media/JavaScript.JPG": "/profile-in-react/static/media/JavaScript.37d23671.JPG",
+    "static/media/basket.jpg": "/profile-in-react/static/media/basket.ee803240.jpg",
     "static/media/data-bigdata.JPG": "/profile-in-react/static/media/data-bigdata.9d33de97.JPG",
+    "static/media/harumi-wharf.jpg": "/profile-in-react/static/media/harumi-wharf.5f566222.jpg",
     "static/media/html-fundamental.JPG": "/profile-in-react/static/media/html-fundamental.e5ffb626.JPG",
     "static/media/instagram.png": "/profile-in-react/static/media/instagram.5c570427.png",
     "static/media/intro-deep-learning.jpg": "/profile-in-react/static/media/intro-deep-learning.a9adc3d1.jpg",
@@ -24,13 +26,14 @@
     "static/media/profile.JPG": "/profile-in-react/static/media/profile.546dccf0.JPG",
     "static/media/python-for-data-science.jpg": "/profile-in-react/static/media/python-for-data-science.df9a162a.jpg",
     "static/media/react-at-futureskill.jpg": "/profile-in-react/static/media/react-at-futureskill.127943bc.jpg",
+    "static/media/sake.jpg": "/profile-in-react/static/media/sake.d872d690.jpg",
     "static/media/technical-support-fundamentals.jpg": "/profile-in-react/static/media/technical-support-fundamentals.23a81f93.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1a7f7a87.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.14c990d6.chunk.js",
+    "static/js/2.0d5043aa.chunk.js",
     "static/css/main.47b1bab8.chunk.css",
-    "static/js/main.6b2212bf.chunk.js"
+    "static/js/main.d9453821.chunk.js"
   ]
 }
