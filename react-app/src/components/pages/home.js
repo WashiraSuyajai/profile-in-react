@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Image } from "react-bootstrap";
-import PinkSea from "./cover-pics/pink-sea.jpg";
+
+import Sakura from "./cover-pics/sakura.jpg";
 
 const P = styled.p`
   margin-top: 2vw;
@@ -17,7 +18,7 @@ class Home extends Component {
     return (
       <div style={{ marginBottom: "5vw" }}>
         <div>
-          <Image src={PinkSea} style={{ width: "100vw", height: "100vh" }} />
+          <Image src={Sakura} style={{ width: "100vw" }} />
         </div>
         <div className="container">
           <h1

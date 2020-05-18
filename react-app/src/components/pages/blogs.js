@@ -7,7 +7,7 @@ class Blogs extends Component {
     return (
       <div>
         <div>
-          <Image src={Harumi} style={{ width: "100vw", height: "100vh" }} />
+          <Image src={Harumi} style={{ width: "100vw" }} />
         </div>
         <div
           className="container"

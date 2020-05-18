@@ -34,7 +34,7 @@ class Profile extends Component {
     return (
       <div>
         <div>
-          <Image src={Sake} style={{ width: "100vw", height: "100vh" }} />
+          <Image src={Sake} style={{ width: "100vw" }} />
         </div>
         <div
           className="ui container"
