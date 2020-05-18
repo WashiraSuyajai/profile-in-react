@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "776f7dcbbf1e87e7c97628bde787a9ac",
+    "revision": "2401773c834f6ea4972f53e7764c49b6",
     "url": "/profile-in-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "d4ccf7317e878c8d4c3b",
+    "revision": "6b5e168d2bc9deef017a",
     "url": "/profile-in-react/static/css/main.47b1bab8.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/js/2.0d5043aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d4ccf7317e878c8d4c3b",
-    "url": "/profile-in-react/static/js/main.d9453821.chunk.js"
+    "revision": "6b5e168d2bc9deef017a",
+    "url": "/profile-in-react/static/js/main.f0f9d1f2.chunk.js"
   },
   {
     "revision": "defd36548f9aff123d8b",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/media/JavaScript.37d23671.JPG"
   },
   {
-    "revision": "ee803240c4b4a2e88478e92283cb19b2",
-    "url": "/profile-in-react/static/media/basket.ee803240.jpg"
+    "revision": "3286193f90b9537db4f940de32072330",
+    "url": "/profile-in-react/static/media/basket.3286193f.jpg"
   },
   {
     "revision": "9d33de97a095dbcae4bf299396cfeff0",
     "url": "/profile-in-react/static/media/data-bigdata.9d33de97.JPG"
   },
   {
-    "revision": "5f566222b134274270dc3e8105e0dc47",
-    "url": "/profile-in-react/static/media/harumi-wharf.5f566222.jpg"
+    "revision": "7754349e1074b4579d3504d23d1b3e1c",
+    "url": "/profile-in-react/static/media/harumi-wharf.7754349e.jpg"
   },
   {
     "revision": "e5ffb626fa7bd477a0081f17ba2af25b",
@@ -60,10 +60,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/media/line.b55e3ce6.png"
   },
   {
-    "revision": "b9e8e7a12fb2d36c07326018fe6de840",
-    "url": "/profile-in-react/static/media/pink-sea.b9e8e7a1.jpg"
-  },
-  {
     "revision": "546dccf04666526ef57cb2cef7b311ab",
     "url": "/profile-in-react/static/media/profile.546dccf0.JPG"
   },
@@ -76,8 +72,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/profile-in-react/static/media/react-at-futureskill.127943bc.jpg"
   },
   {
-    "revision": "d872d69046345098848c60bc70ef86f7",
-    "url": "/profile-in-react/static/media/sake.d872d690.jpg"
+    "revision": "f6a009fad8c87864d84c96d119c778a4",
+    "url": "/profile-in-react/static/media/sake.f6a009fa.jpg"
+  },
+  {
+    "revision": "a9fefbe33f8d5282b28c53057c24b606",
+    "url": "/profile-in-react/static/media/sakura.a9fefbe3.jpg"
   },
   {
     "revision": "23a81f9308841ccbe0a8b7ef87c5566d",
