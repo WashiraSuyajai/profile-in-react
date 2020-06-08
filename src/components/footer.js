@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import lineIcon from "../components/pics/line.png";
 import facebookIcon from "../components/pics/facebook.png";
 import instagramIcon from "../components/pics/instagram.png";
@@ -30,10 +30,7 @@ function Footer({ footerTheme }) {
       style={footerTheme === "light" ? light : dark}
     >
       <div>
-        <div className="" style={{ textAlign: "center" }}>
-          <h4>washira</h4>
-        </div>
-        <h5 id="Follow" style={{ marginLeft: "60vw" }}>
+        <h5 id="Follow" style={{ marginLeft: "45vw" }}>
           Follow me
         </h5>
         {/* Icons */}
@@ -41,7 +38,7 @@ function Footer({ footerTheme }) {
           className="row"
           style={{
             alignItems: "normal",
-            marginLeft: "58vw",
+            marginLeft: "43vw",
             marginTop: "15px",
             marginBottom: "30px",
           }}
@@ -67,7 +64,7 @@ function Footer({ footerTheme }) {
             </a>
           </div>
         </div>
-        <div style={{ marginLeft: "60vw", marginBottom: "20px" }}>
+        <div style={{ marginLeft: "44.5vw", marginBottom: "20px" }}>
           2020@washira
         </div>
       </div>

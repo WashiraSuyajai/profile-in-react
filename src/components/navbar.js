@@ -28,7 +28,7 @@ function NavBar({ navbarTheme, onThemeChange }) {
           <Navbar.Brand href="/profile-in-react/">POU</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
+            <Nav className="ml-auto">
               <Nav.Link as={Link} to="/" style={NavbarOne}>
                 Home
               </Nav.Link>
@@ -50,9 +50,9 @@ function NavBar({ navbarTheme, onThemeChange }) {
                   Certificates
                 </NavDropdown.Item>
               </NavDropdown>
+              <button onClick={onThemeChange}>Dark Mode</button>
             </Nav>
           </Navbar.Collapse>
-          <button onClick={onThemeChange}>Dark Mode</button>
         </div>
       </Navbar>
       {/* Router Switch */}

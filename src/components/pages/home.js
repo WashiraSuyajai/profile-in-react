@@ -5,47 +5,51 @@ import { Image } from "react-bootstrap";
 import Sakura from "./cover-pics/sakura.jpg";
 
 const P = styled.p`
-  margin-top: 2vw;
+  margin-left: 5em;
+  margin-right: 5em;
+  width: 60%;
   font-size: 20px;
-  font-fammily: chivo;
-`;
-const PBottom = styled(P)`
-  margin-bottom: 5vw;
+  font-fammily: Georgia;
 `;
 
 class Home extends Component {
   render() {
     return (
       <div style={{ marginBottom: "5vw" }}>
-        <div>
-          <Image src={Sakura} style={{ width: "100vw" }} />
-        </div>
-        <div className="container">
-          <h1
+        <div style={{ position: "relative", textAlign: "center" }}>
+          <Image src={Sakura} style={{ width: "100vw", opacity: "0.8" }} />
+          <div
             style={{
-              marginTop: "5vw",
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
               fontFamily: "chivo",
+              fontWeight: "bold",
             }}
           >
-            Welcome to my page
-          </h1>
+            <h1>WASHIRA SUYAJAI<br/><span style={{fontSize:"15px"}}>WEB DEVELOPER</span></h1>
+          </div>
+        </div>
+        <div className="container" style={{ margin: "5% 10%" }}>
           <P>
-            ยินดีต้อนรับทุกท่านเข้าสู่ Web Page ของผมนะครับ ในเวปไซต์นี้
+            &ensp;&ensp;ยินดีต้อนรับทุกท่านเข้าสู่ Web Page ของผมนะครับ ในเวปไซต์นี้
             ผมได้จัดทำขึ้นจากการทดลองฝึกเขียน Web Site ด้วย React
-            และมีการตกแต่งหน้าตาด้วย CSS Framework อย่าง React Bootstrap และ
-            React-Semantic-UI เพิ่อเพิ่มความสวย (รึเปล่าหว่า?)
+            และตกแต่งหน้าตาด้วย CSS และ CSS Framework อย่าง React Bootstrap และ
+            React-Semantic-UI
           </P>
           <P>
-            ซึ่งการพัฒนาเวปไซต์ของผมนั้นเป็นการได้ทดลองทำสิ่งใหม่ๆออกมา
-            เปรียบเหมือนเป็นการเดินทางในเส้นทางใหม่ๆ เปิดโลกทางเทคโนโลยีของผมมากๆ
-            เปลี่ยนมนุษย์คนนึง ที่เคยไม่รู้จักการทำงานของเวปไซต์หนึ่งๆ
-            ให้เข้าใจผ่านการลงมือทดลองทำ จนเป็นแบบที่ท่านได้เห็นนี้
-            และผมจะพัฒนาให้ดีขึ้นต่อไป ตามความรู้และเทคโนโลยีที่ก้าวไปข้างหน้าอย่างไม่หยุดยั้ง
+            &ensp;&ensp;การพัฒนาเวปไซต์ของผมนั้นเป็นการได้ทดลองทำสิ่งใหม่ๆออกมา
+            เปรียบเหมือนเป็นการเดินทางในเส้นทางใหม่ๆ
+            เปิดโลกทางเทคโนโลยีของผมมากๆ เปลี่ยนมนุษย์คนนึง
+            ที่เคยไม่รู้จักการทำงานของเวปไซต์หนึ่งๆ ให้เข้าใจผ่านการลงมือทดลองทำ
+            จนเป็นแบบที่ท่านได้เห็นนี้ และผมจะพัฒนาให้ดีขึ้นต่อไป
+            ตามความรู้และเทคโนโลยีที่ก้าวไปข้างหน้าอย่างไม่หยุดยั้ง
           </P>
-          <PBottom>
-            ท้ายสุดนี้
+          <P>
+            &ensp;&ensp;ท้ายสุดนี้
             ผมกราบขอบพระคุณทุกท่านที่ได้เข้ามารับชมภายในเวปไซต์นี้ด้วยความยินดียิ่งครับ
-          </PBottom>
+          </P>
         </div>
       </div>
     );

@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 import { Grid, Menu, Segment, Item } from "semantic-ui-react";
-import SearchBar from "./videos/searchbar";
-import { Switch, Route } from "react-router-dom";
-import ProfilePic from "../pics/profile.JPG";
 import Bio from "./my-info/bio";
-import Interesting from "./my-info/interesting"
+import Interesting from "./my-info/interesting";
 import Performances from "./my-info/performances";
 import Experiences from "./my-info/experiences";
 import Link from "./my-info/link";
 import { Image } from "react-bootstrap";
 import Sake from "./cover-pics/sake.jpg";
+import Avatar from "../pics/avataaars.png";
 
 class Profile extends Component {
   state = { activeItem: "Bio" };
@@ -33,14 +31,25 @@ class Profile extends Component {
     // content สามารถเป็น JSX ได้
     return (
       <div>
-        <div>
-          <Image src={Sake} style={{ width: "100vw" }} />
+        <div style={{ position: "relative", textAlign: "center" }}>
+          <Image src={Sake} style={{ width: "100vw", opacity: "0.8" }} />
+          <h1
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              color: "rgb(255,255,255)",
+              fontWeight: "bold",
+            }}
+          >
+            Info
+          </h1>
         </div>
         <div
           className="ui container"
           style={{ marginTop: "5vw", marginBottom: "5vw" }}
         >
-          <h1 style={{ fontFamily: "chivo" }}>My Info</h1>
           <Grid
             columns={3}
             divided
@@ -50,7 +59,7 @@ class Profile extends Component {
           >
             <Grid.Column>
               <Item>
-                <Item.Image size="massive" src={ProfilePic} />
+                <Item.Image size="massive" src={Avatar} />
               </Item>
             </Grid.Column>
             <Grid.Column width={3}>
@@ -87,9 +96,6 @@ class Profile extends Component {
               <Segment content={content} />
             </Grid.Column>
           </Grid>
-          <Switch>
-            <Route exact path="/searchbar" component={SearchBar} />
-          </Switch>
         </div>
       </div>
     );
