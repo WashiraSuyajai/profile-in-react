@@ -4,6 +4,8 @@ import Basket from "./cover-pics/basket.jpg";
 
 const Block = {
   display: "block",
+  margin: "3%",
+  padding: "1%",
   width: "40%",
   height: "25%",
   boxShadow: "2px 2px 2px 2px rgb(234, 237, 237)",

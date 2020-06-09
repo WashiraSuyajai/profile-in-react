@@ -5,8 +5,8 @@ import { Image } from "react-bootstrap";
 import Sakura from "./cover-pics/sakura.jpg";
 
 const P = styled.p`
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 5%;
+  margin-right: 5%;
   width: 60%;
   font-size: 20px;
   font-fammily: Georgia;
@@ -28,10 +28,10 @@ class Home extends Component {
               fontWeight: "bold",
             }}
           >
-            <h1>WASHIRA SUYAJAI<br/><span style={{fontSize:"15px"}}>WEB DEVELOPER</span></h1>
+            <h1 style={{fontSize:"200%"}}>WASHIRA SUYAJAI<br/><span style={{fontSize:"50%"}}>WEB DEVELOPER</span></h1>
           </div>
         </div>
-        <div className="container" style={{ margin: "5% 10%" }}>
+        <div className="container" style={{ margin: "5%" }}>
           <P>
             &ensp;&ensp;ยินดีต้อนรับทุกท่านเข้าสู่ Web Page ของผมนะครับ ในเวปไซต์นี้
             ผมได้จัดทำขึ้นจากการทดลองฝึกเขียน Web Site ด้วย React
