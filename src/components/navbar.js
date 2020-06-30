@@ -21,6 +21,7 @@ function NavBar({ navbarTheme, onThemeChange }) {
       <Navbar
         bg={navbarTheme === "light" ? "light" : "secondary"}
         expand="lg"
+        fixed="top"
         
         style={{ transition: "all 0.25s linear" }}
       >

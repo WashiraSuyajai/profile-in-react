@@ -29,14 +29,20 @@ class Project extends Component {
             Project
           </h1>
         </div>
-        <div className="container" style={{ margin: "5%" }}>
+        <div className="container" style={{ margin: "5%", fontWeight:"bold" }}>
           <p>
             {" "}
-            เป็นหน้าที่แสดงโปรเจคต่างๆที่ผมเคยฝึกทำเอาไว้ ทั้งตอนที่เรียนจาก
+            โปรเจคต่างๆที่ผมเคยฝึกทำเอาไว้ ทั้งตอนที่เรียนจาก
             Online Course และจากที่ฝึกทำด้วยตัวเองครับ
           </p>
+          <p style={{marginTop: "5%"}}>HTML CSS</p>
           <div style={Block}><a href="https://washirasuyajai.github.io/webpage-perfume-shop/">Using HTML and CSS to Build The Perfume Shop Landing Page</a></div>
           <div style={Block}><a href="https://washirasuyajai.github.io/bootstrap-lab/">Using HTML and Bootstrap to Build The Travel Web Page</a></div>
+          <p>React Node and Express</p>
+          <div style={Block}><a href="https://github.com/WashiraSuyajai/react-post-http-request-fetch-thaipost">Using Thai Post  Rest API to React</a></div>
+          <div style={Block}><a href="https://github.com/WashiraSuyajai/react-and-express">Create React fetch data from Node js</a></div>
+          <div style={Block}><a href="https://github.com/WashiraSuyajai/nodejs-express-crud">Create Chelsea List Player API from Express Framework</a></div>
+          <div style={Block}><a href="https://github.com/WashiraSuyajai/simple-blog-in-next">A Simple Web Pages with Next js</a></div>
         </div>
       </div>
     );
